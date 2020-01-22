@@ -5,5 +5,6 @@ module RefList {
     requires javafx.base;
     requires opencsv;
 
-    opens ui to javafx.graphics, javafx.fxml;
+    opens ui.controllers to javafx.graphics, javafx.fxml;
+    opens ui to javafx.graphics;
 }

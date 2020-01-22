@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1bb3b86-ca75-4baa-b9bb-941d1f0b60cb" name="Default Changelist" comment="" />
+    <list default="true" id="f1bb3b86-ca75-4baa-b9bb-941d1f0b60cb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controllers/AuthorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ui/controllers/ManualController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/author.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logic/model/CommonItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logic/model/CommonItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Edit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controllers/EditController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/manual.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/manual.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/manual.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/manual.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logic/model/CommonItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logic/model/CommonItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Edit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/EditController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/EditController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ui/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/MainController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ui/MainController.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,10 +38,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -24,6 +54,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1WguiS9tdtxft3BArexJdwUTcKO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +62,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/fxml/editTypes" />
   </component>
   <component name="RecentsManager">
@@ -50,7 +82,7 @@
       <module name="RefList" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ui.*" />
+          <option name="PATTERN" value="ui.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,10 +129,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="177" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1579587859720" />
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1579608845061">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1579695112420">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579608845061" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579695112420" />
     <state x="681" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1579592035520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -113,25 +145,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579608028124" />
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1579609221969">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom" timestamp="1579699547558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579609221969" />
-    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1579609221969">
+    <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1579699547558" />
+    <state width="1876" height="277" key="GridCell.Tab.0.center" timestamp="1579699547558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579609221969" />
-    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1579609221968">
+    <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1579699547558" />
+    <state width="1876" height="277" key="GridCell.Tab.0.left" timestamp="1579699547558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579609221968" />
-    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1579609221969">
+    <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1579699547558" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right" timestamp="1579699547558">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579609221969" />
+    <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1579699547558" />
     <state x="562" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579589350660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="562" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579589350660" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1579697366121">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1579697366121" />
   </component>
 </project>

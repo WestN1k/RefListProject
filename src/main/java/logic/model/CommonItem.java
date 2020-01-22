@@ -13,6 +13,9 @@ public class CommonItem {
 
     private String itemType;
 
+    public CommonItem() {
+    }
+
     public CommonItem(Author author, String name, String publisher, String city, int year, int pages, String itemType) {
         this.author = author;
         this.name = name;
@@ -76,7 +79,7 @@ public class CommonItem {
         return year;
     }
 
-    public void setYear(short year) {
+    public void setYear(int year) {
         this.year = year;
     }
 
@@ -84,7 +87,7 @@ public class CommonItem {
         return pages;
     }
 
-    public void setPages(short pages) {
+    public void setPages(int pages) {
         this.pages = pages;
     }
 

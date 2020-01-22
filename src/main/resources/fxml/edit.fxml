@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.EditController">
+<AnchorPane prefHeight="400.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.EditController">
    <children>
       <VBox prefHeight="400.0" prefWidth="328.0">
          <children>
@@ -39,7 +38,7 @@
             <Pane fx:id="EditContentPane" prefHeight="275.0" prefWidth="343.0" />
             <HBox alignment="CENTER" prefHeight="28.0" prefWidth="280.0" spacing="20.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" text="создать" />
+                  <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="121.0" text="создать" />
                   <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="отмена" />
                </children>
                <VBox.margin>

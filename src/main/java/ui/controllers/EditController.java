@@ -1,4 +1,4 @@
-package ui;
+package ui.controllers;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -9,7 +9,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+import logic.model.Author;
 import logic.model.CommonItem;
 
 import java.io.IOException;
@@ -21,6 +24,12 @@ public class EditController {
 
     @FXML
     private Pane EditContentPane;
+
+    private Stage dialogStage;
+    private CommonItem item;
+    private boolean okClicked = false;
+    private ManualController controller;
+
 
     @FXML
     private void initialize() {
@@ -46,20 +55,14 @@ public class EditController {
     }
 
     public void loadManualPane() throws IOException {
-        setEditContentPane(FXMLLoader.load(getClass().getResource("/fxml/editTypes/manual.fxml")));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/editTypes/manual.fxml"));
+        setEditContentPane(loader.load());
+        this.controller = loader.getController();
+        controller.setItem(this.item);
     }
 
     public void loadMonographPane() throws IOException {
         setEditContentPane(FXMLLoader.load(getClass().getResource("/fxml/editTypes/monography.fxml")));
-    }
-
-    public void setRedactItem(CommonItem item) {
-
-    }
-
-    public void getItemToChoice(CommonItem item) {
-        switchChoiceValue(item.getItemType());
-        System.out.println(item.getName());
     }
 
     public void switchChoiceValue(String choiceValue) {
@@ -79,5 +82,47 @@ public class EditController {
                 }
                 break;
         }
+    }
+
+    public void setDialogStage(Stage dialogStage) {
+        this.dialogStage = dialogStage;
+
+    }
+
+    public void setCommonItem(CommonItem item) {
+        this.item = item;
+    }
+
+    public CommonItem getCommonItem() {
+        return this.item;
+    }
+
+    public boolean isOkClicked() {
+        return okClicked;
+    }
+
+    @FXML
+    private void handleOk() {
+//        if (isInputValid()) {
+        item.setName(controller.getNameField());
+        item.setPublisher(controller.getPublisherField());
+        item.setYear(Integer.parseInt("1990"));
+        item.setAuthor(new Author("Иванов", "Василий", "Петрович"));
+        item.setCity("Астрахань");
+        item.setPages(Integer.parseInt("20"));
+        item.setItemType("Учебники");
+//        item.setYear((short) Integer.parseInt(yearField.getText()));
+//        item.setPages((short) Integer.parseInt(pagesField.getText()));
+//        item.setCity(cityField.getText());
+        okClicked = true;
+        dialogStage.close();
+//        }
+    }
+
+
+
+    @FXML
+    private void handleCancel() {
+        dialogStage.close();
     }
 }

@@ -46,7 +46,20 @@ public class ManualController {
         return publisherField.getText();
     }
 
+    public String getYearField() {
+        return yearField.getText();
+    }
 
+    public String getCityField() {
+        return cityField.getText();
+    }
 
+    public String getPagesField() {
+        return pagesField.getText();
+    }
+
+    public String getType() {
+        return "Учебники";
+    }
 
 }

@@ -5,7 +5,7 @@ import logic.model.CommonItem;
 public final class FormatText {
 
     public String getFormatTextManual(CommonItem item) {
-        return item.getAuthor().getShortRecordWithComma() + " " + item.getName() + "/"+ item.getStringAuthors() + ": " + item.getCity()
+        return item.getAuthor(0).getShortRecordWithComma() + " " + item.getName() + "/"+ item.getStringAuthors() + ": " + item.getCity()
                 + ":" + item.getPublisher() + " - " + item.getYear() + ", " + item.getPages() + " c.";
     }
 

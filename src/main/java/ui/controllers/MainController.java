@@ -58,31 +58,7 @@ public class MainController {
     }
 
     @FXML
-    private void addNewItem(ActionEvent event) {
-
-//        Author author = new Author("Иванов", "Василий", "Петрович");
-//        Author author1 = new Author("Васильев", "Геннадий", "Александович");
-//        Author author2 = new Author("Коновалов", "Григорий", "Александович");
-//        Author author3 = new Author("Александров", "Виталий", "Владимирович");
-//
-//        CommonItem item = new CommonItem(author, "тестовая статья", "сделайСам",
-//                "Астрахань", 1990, 302, "Учебники");
-//
-//        item.setAuthor(author);
-//
-//        item.setToAuthors(author1);
-//        item.setToAuthors(author2);
-//        item.setToAuthors(author3);
-//
-//        itemsView.getItems().add(item);
-//        mainApp.showAuthorEditDialog()
-//        Edit editWindow = new Edit();
-//        editWindow.getNewEditWindow();
-
-        handleNewItem();
-    }
-
-    public void handleNewItem() {
+    public void addNewItem(ActionEvent event) {
         CommonItem tempItem = new CommonItem();
         boolean okClicked = mainApp.showItemEditDialog(tempItem);
         if (okClicked) {
@@ -93,9 +69,9 @@ public class MainController {
     private void handleEditItem(CommonItem item) {
         if (item != null) {
             boolean okClicked = mainApp.showItemEditDialog(item);
-//            if (okClicked) {
-//                showPersonDetails(selectedPerson);
-//                }
+            if (okClicked) {
+                itemsView.refresh();
+                }
         }
     }
 

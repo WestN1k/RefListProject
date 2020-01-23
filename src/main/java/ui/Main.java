@@ -18,6 +18,7 @@ import java.io.IOException;
 public class Main extends Application {
 
     private Stage rootStage;
+    private Stage editStage;
 
     public static void main(String[] args) {
         launch(args);
@@ -53,19 +54,20 @@ public class Main extends Application {
             AnchorPane page = loader.load();
 
             // Создаём диалоговое окно Stage.
-            Stage dialogStage = new Stage();
-            dialogStage.setTitle("Edit Person");
-            dialogStage.initModality(Modality.WINDOW_MODAL);
-            dialogStage.initOwner(this.rootStage);
-            dialogStage.setScene(new Scene(page));
+            editStage = new Stage();
+            editStage.setTitle("Edit Person");
+            editStage.initModality(Modality.WINDOW_MODAL);
+            editStage.initOwner(this.rootStage);
+            editStage.setScene(new Scene(page));
 
             // Передаём адресата в контроллер.
             EditController controller = loader.getController();
-            controller.setDialogStage(dialogStage);
+            controller.setDialogStage(editStage);
             controller.setCommonItem(item);
+            controller.setMainApp(this);
 
             // Отображаем диалоговое окно и ждём, пока пользователь его не закроет
-            dialogStage.showAndWait();
+            editStage.showAndWait();
 
             return controller.isOkClicked();
         } catch (IOException e) {
@@ -74,28 +76,28 @@ public class Main extends Application {
         }
     }
 
-    public boolean showAuthorEditDialog(CommonItem item) {
+    public boolean showAuthorEditDialog(Author author) {
 
         try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("/fxml/edit.fxml"));
-            AnchorPane page = (AnchorPane) loader.load();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/author.fxml"));
+            AnchorPane page = loader.load();
 
             Stage dialogStage = new Stage();
             dialogStage.setTitle("Edit Author");
             dialogStage.initModality(Modality.WINDOW_MODAL);
-//            dialogStage.initOwner(stage);
+            dialogStage.initOwner(this.editStage);
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
 
             // Передаём адресата в контроллер.
             AuthorController controller = loader.getController();
-//        controller.setAuthorDialogStage(dialogStage);
-//        controller.setAuthor(item.getAuthor());
+            controller.setAuthorDialogStage(dialogStage);
+
+            controller.setAuthor(author);
 
             dialogStage.showAndWait();
 //            return controller.isOkClicked();
-            return true;
+            return controller.isOkClicked();
         } catch (IOException e) {
             e.printStackTrace();
             return false;

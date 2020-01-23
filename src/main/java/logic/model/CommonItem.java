@@ -3,7 +3,6 @@ package logic.model;
 import java.util.ArrayList;
 
 public class CommonItem {
-    private Author author;
     private String name;
     private ArrayList<Author> authors = new ArrayList<>();
     private String publisher;
@@ -16,8 +15,7 @@ public class CommonItem {
     public CommonItem() {
     }
 
-    public CommonItem(Author author, String name, String publisher, String city, int year, int pages, String itemType) {
-        this.author = author;
+    public CommonItem(String name, String publisher, String city, int year, int pages, String itemType) {
         this.name = name;
         this.publisher = publisher;
         this.city = city;
@@ -34,17 +32,12 @@ public class CommonItem {
         this.itemType = itemType;
     }
 
-    public Author getAuthor() {
-        return author;
-    }
-
     public void setAuthor(Author author) {
-        this.author = author;
         authors.add(author);
     }
 
-    public void setToAuthors(Author author) {
-        authors.add(author);
+    public Author getAuthor(int index) {
+        return getAuthors().get(index);
     }
 
     public String getName() {
@@ -89,6 +82,10 @@ public class CommonItem {
 
     public void setPages(int pages) {
         this.pages = pages;
+    }
+
+    public void clearAuthorsList() {
+        authors.clear();
     }
 
     public String getStringAuthors() {

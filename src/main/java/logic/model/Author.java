@@ -5,6 +5,10 @@ public class Author {
     private String name;
     private String patronymic;
 
+    public Author() {
+
+    }
+
     public Author(String surname, String name, String patronymic) {
         this.surname = surname;
         this.name = name;

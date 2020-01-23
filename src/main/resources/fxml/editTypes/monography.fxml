@@ -1,31 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="245.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.MonographyController">
    <children>
-      <VBox alignment="CENTER" prefHeight="234.0" prefWidth="476.0">
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="310.0">
          <children>
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
-                  <Label prefHeight="44.0" prefWidth="157.0" text="Основной автор" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="244.0" />
-                  <Button mnemonicParsing="false" text="соавторы" />
-               </children>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
-               </VBox.margin>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
-               <children>
                   <Label prefHeight="44.0" prefWidth="157.0" text="название" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="244.0" />
+                  <TextField fx:id="nameField" prefHeight="25.0" prefWidth="244.0" />
                </children>
                <opaqueInsets>
                   <Insets />
@@ -37,7 +26,7 @@
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
                   <Label prefHeight="44.0" prefWidth="157.0" text="номер" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="244.0">
+                  <TextField fx:id="numberField" prefHeight="25.0" prefWidth="244.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -50,7 +39,7 @@
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
                   <Label prefHeight="44.0" prefWidth="157.0" text="Издательство" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="244.0">
+                  <TextField fx:id="publisherField" prefHeight="25.0" prefWidth="244.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -63,7 +52,7 @@
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
                   <Label prefHeight="44.0" prefWidth="157.0" text="год" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="244.0">
+                  <TextField fx:id="yearField" prefHeight="25.0" prefWidth="244.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
@@ -75,14 +64,14 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="157.0" text="страницы размещения с" textAlignment="CENTER" wrapText="true" />
-                  <TextField prefHeight="25.0" prefWidth="68.0">
+                  <Label alignment="CENTER" prefHeight="25.0" prefWidth="155.0" text="страницы размещения с" textAlignment="CENTER" wrapText="true" />
+                  <TextField fx:id="startPage" prefHeight="25.0" prefWidth="68.0">
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
                   </TextField>
-                  <Label text="по" />
-                  <TextField prefHeight="25.0" prefWidth="70.0" />
+                  <Label prefHeight="17.0" prefWidth="37.0" text="по" />
+                  <TextField fx:id="endPage" prefHeight="25.0" prefWidth="70.0" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />

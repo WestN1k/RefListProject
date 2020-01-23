@@ -38,10 +38,10 @@ public class MainController {
             @Override
             protected void updateItem(CommonItem item, boolean empty) {
                 super.updateItem(item, empty);
-                if(empty || item == null || item.getName() == null){
+                if(empty || item == null || item.getItemType() == null){
                     setText("");
                 } else {
-                    setText(format.getFormatTextManual(item));
+                    setText(format.getFormatText(item));
                 }
             }
         });

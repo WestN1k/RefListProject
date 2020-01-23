@@ -4,19 +4,20 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
-public class ManualController extends CommonController{
+public class JournalController extends CommonController {
 
     @FXML
     protected TextField nameField;
-    @FXML
-    protected TextField cityField;
     @FXML
     protected TextField publisherField;
     @FXML
     protected TextField yearField;
     @FXML
-    protected TextField pagesField;
-
+    private TextField numberField;
+    @FXML
+    private TextField startPage;
+    @FXML
+    private TextField endPage;
 
     @FXML
     private void initialize()  {
@@ -28,15 +29,16 @@ public class ManualController extends CommonController{
             nameField.setText(item.getName());
             publisherField.setText(item.getPublisher());
             yearField.setText(Integer.toString(item.getYear()));
-            pagesField.setText(Integer.toString(item.getPages()));
-            cityField.setText(item.getCity());
-
+            numberField.setText(Integer.toString(item.getNumJournal()));
+            startPage.setText(Integer.toString(item.getStartPage()));
+            endPage.setText(Integer.toString(item.getEndPage()));
         } else {
+            numberField.setText("");
+            startPage.setText("");
+            endPage.setText("");
             nameField.setText("");
             publisherField.setText("");
             yearField.setText("");
-            pagesField.setText("");
-            cityField.setText("");
         }
     }
 
@@ -52,16 +54,21 @@ public class ManualController extends CommonController{
         return yearField.getText();
     }
 
-    public String getCityField() {
-        return cityField.getText();
+    public String getNumberField() {
+        return numberField.getText();
     }
 
-    public String getPagesField() {
-        return pagesField.getText();
+    public String getStartPage() {
+        return startPage.getText();
     }
 
+    public String getEndPage() {
+        return endPage.getText();
+    }
+
+    @Override
     public String getType() {
-        return "Учебники";
+        return "Журнальные статьи";
     }
 
 }

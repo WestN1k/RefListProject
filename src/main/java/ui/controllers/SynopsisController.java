@@ -4,39 +4,32 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
-public class ManualController extends CommonController{
-
+public class SynopsisController extends CommonController{
     @FXML
-    protected TextField nameField;
+    private TextField nameField;
     @FXML
-    protected TextField cityField;
+    private TextField regalyAuthorField;
     @FXML
-    protected TextField publisherField;
+    private TextField cityField;
     @FXML
-    protected TextField yearField;
+    private TextField yearField;
     @FXML
-    protected TextField pagesField;
-
-
-    @FXML
-    private void initialize()  {
-    }
+    private TextField pagesField;
 
     @Override
     public void setItem(CommonItem item) {
         if (item != null) {
             nameField.setText(item.getName());
-            publisherField.setText(item.getPublisher());
+            regalyAuthorField.setText(item.getRegaliaAuthor());
             yearField.setText(Integer.toString(item.getYear()));
-            pagesField.setText(Integer.toString(item.getPages()));
             cityField.setText(item.getCity());
-
+            pagesField.setText(Integer.toString(item.getPages()));
         } else {
-            nameField.setText("");
-            publisherField.setText("");
-            yearField.setText("");
-            pagesField.setText("");
+            regalyAuthorField.setText("");
             cityField.setText("");
+            pagesField.setText("");
+            nameField.setText("");
+            yearField.setText("");
         }
     }
 
@@ -44,8 +37,9 @@ public class ManualController extends CommonController{
         return nameField.getText();
     }
 
-    public String getPublisherField() {
-        return publisherField.getText();
+    @Override
+    public String getRegaliaAuthor() {
+        return regalyAuthorField.getText();
     }
 
     public String getYearField() {
@@ -60,8 +54,8 @@ public class ManualController extends CommonController{
         return pagesField.getText();
     }
 
+    @Override
     public String getType() {
-        return "Учебники";
+        return "Авторефераты";
     }
-
 }

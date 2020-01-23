@@ -3,25 +3,134 @@ package logic.model;
 import java.util.ArrayList;
 
 public class CommonItem {
-    private String name;
+
+    //общее
+    private String name;  // название/статья в журнале
     private ArrayList<Author> authors = new ArrayList<>();
-    private String publisher;
+    private String publisher;  // издательство/журнал
     private String city;
     private int year;
     private int pages;
 
+    private String date;
+
+    //для статьи, монографии
+    private int numJournal;
+    private int startPage;
+    private int endPage;
+
+    //для автореферата/диссертации
+    private String regaliaAuthor;
+
+    //для диссертиции
+    private String workStatus;
+
+    //для учебных пособий
+    private String editor;
+
+    //для патентов
+    private int numPatent;
+    private int numBull;
+
+    //для материалов конференций
+    private String topic;
+
+    //для интернет документов
+    private String url;
+
     private String itemType;
+
 
     public CommonItem() {
     }
 
-    public CommonItem(String name, String publisher, String city, int year, int pages, String itemType) {
-        this.name = name;
-        this.publisher = publisher;
-        this.city = city;
-        this.year = year;
-        this.pages = pages;
-        this.itemType = itemType;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getNumJournal() {
+        return numJournal;
+    }
+
+    public void setNumJournal(int numJournal) {
+        this.numJournal = numJournal;
+    }
+
+    public int getStartPage() {
+        return startPage;
+    }
+
+    public void setStartPage(int startPage) {
+        this.startPage = startPage;
+    }
+
+    public int getEndPage() {
+        return endPage;
+    }
+
+    public void setEndPage(int endPage) {
+        this.endPage = endPage;
+    }
+
+    public String getRegaliaAuthor() {
+        return regaliaAuthor;
+    }
+
+    public void setRegaliaAuthor(String regaliaAuthor) {
+        this.regaliaAuthor = regaliaAuthor;
+    }
+
+    public String getWorkStatus() {
+        return workStatus;
+    }
+
+    public void setWorkStatus(String workStatus) {
+        this.workStatus = workStatus;
+    }
+
+    public String getEditor() {
+        return editor;
+    }
+
+    public void setEditor(String editor) {
+        this.editor = editor;
+    }
+
+    public int getNumPatent() {
+        return numPatent;
+    }
+
+    public void setNumPatent(int numPatent) {
+        this.numPatent = numPatent;
+    }
+
+    public int getNumBull() {
+        return numBull;
+    }
+
+    public void setNumBull(int numBull) {
+        this.numBull = numBull;
+    }
+
+    public String getTopic() {
+        return topic;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getItemType() {

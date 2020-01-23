@@ -20,6 +20,8 @@ import ui.Main;
 import java.io.IOException;
 
 public class EditController {
+    private final static int MAX_COUNT_AUTHORS = 4;
+    private int countAuthors = 0;
 
     @FXML
     private ChoiceBox<String> source_view_choice_box;
@@ -38,9 +40,7 @@ public class EditController {
     private Stage dialogStage;
     private CommonItem item;
     private boolean okClicked = false;
-    private ManualController controller;
-
-    private int countAuthors = 0;
+    private Controller controller;
 
     private Main mainApp;
 
@@ -78,7 +78,6 @@ public class EditController {
             if(event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
                 System.out.println(authorsListView.getSelectionModel().getSelectedItem());
 
-                //как передать данные на страницу edit для редактирования???
                 addEditAuthor(authorsListView.getSelectionModel().getSelectedItem());
             }
         });
@@ -92,36 +91,31 @@ public class EditController {
         EditContentPane.getChildren().setAll(node);
     }
 
-
-    public void loadManualPane() throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/editTypes/manual.fxml"));
+    public void loadPane(String resourcePath) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(resourcePath));
         setEditContentPane(loader.load());
         this.controller = loader.getController();
         controller.setItem(this.item);
     }
 
-    public void loadMonographPane() throws IOException {
-        setEditContentPane(FXMLLoader.load(getClass().getResource("/fxml/editTypes/monography.fxml")));
-    }
-
-
-
     public void switchChoiceValue(String choiceValue) {
-        switch (choiceValue) {
-            case "Учебники":
-                try {
-                    loadManualPane();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                break;
-            case "Монографии":
-                try {
-                    loadMonographPane();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                break;
+        try {
+            switch (choiceValue) {
+                case "Учебники":
+                    loadPane("/fxml/editTypes/manual.fxml");
+                    break;
+                case "Монографии":
+                    loadPane("/fxml/editTypes/monography.fxml");
+                    break;
+                case "Журнальные статьи":
+                    loadPane("/fxml/editTypes/journal.fxml");
+                    break;
+                case "Авторефераты":
+                    loadPane("/fxml/editTypes/synopsis.fxml");
+                    break;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -142,10 +136,6 @@ public class EditController {
         }
     }
 
-    public CommonItem getCommonItem() {
-        return this.item;
-    }
-
     public boolean isOkClicked() {
         return okClicked;
     }
@@ -161,10 +151,22 @@ public class EditController {
 
         item.setName(controller.getNameField());
         item.setPublisher(controller.getPublisherField());
-        item.setYear(Integer.parseInt(controller.getYearField()));
         item.setCity(controller.getCityField());
-        item.setPages(Integer.parseInt(controller.getPagesField()));
         item.setItemType(controller.getType());
+        item.setDate(controller.getDate());
+        item.setEditor(controller.getEditor());
+        item.setRegaliaAuthor(controller.getRegaliaAuthor());
+        item.setTopic(controller.getTopic());
+        item.setUrl(controller.getUrl());
+        item.setWorkStatus(controller.getWorkStatus());
+
+        item.setYear(Integer.parseInt(controller.getYearField()));
+        item.setPages(Integer.parseInt(controller.getPagesField()));
+        item.setNumJournal(Integer.parseInt(controller.getNumberField()));
+        item.setStartPage(Integer.parseInt(controller.getStartPage()));
+        item.setEndPage(Integer.parseInt(controller.getEndPage()));
+        item.setNumBull(Integer.parseInt(controller.getNumBull()));
+        item.setNumPatent(Integer.parseInt(controller.getNumPatent()));
 
         okClicked = true;
         dialogStage.close();
@@ -181,7 +183,7 @@ public class EditController {
         Author tempAuthor = new Author();
         boolean okClicked = mainApp.showAuthorEditDialog(tempAuthor);
         addAuthorsButton.setDisable(false);
-        if (countAuthors < 4) {
+        if (countAuthors < MAX_COUNT_AUTHORS) {
             if (okClicked) {
                 authorsListView.getItems().add(tempAuthor);
                 countAuthors += 1;

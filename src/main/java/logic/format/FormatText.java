@@ -12,9 +12,44 @@ public final class FormatText {
             case "Монографии": return getFormatTextMonography();
             case "Журнальные статьи": return getFormatTextJournal();
             case "Авторефераты": return getFormatTextSynopsis();
+            case "Диссертации": return getFormatTextDissertation();
+            case "Обзоры (аналитика)": return getFormatTextReview();
+            case "Патенты": return getFormatTextPatents();
+            case "Материалы конференций": return getFormatTextConferention();
+            case "Интернет-документы": return getFormatTextWebDocuments();
+            case "Учебные пособия": return getFormatTextTutorial();
+            case "Словари": return getFormatTextDictionary();
         }
 
         return "";
+    }
+
+    private String getFormatTextDissertation() {
+        return "this is dissertation";
+    }
+
+    private String getFormatTextReview() {
+        return "review";
+    }
+
+    private String getFormatTextPatents() {
+        return "patents";
+    }
+
+    private String getFormatTextConferention() {
+        return "conferention";
+    }
+
+    private String getFormatTextWebDocuments() {
+        return "web document";
+    }
+
+    private String getFormatTextTutorial() {
+        return "tutorial";
+    }
+
+    private String getFormatTextDictionary() {
+        return "dictionary";
     }
 
     private String getFormatTextManual() {

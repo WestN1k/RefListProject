@@ -57,6 +57,13 @@
                <center>
                   <ListView fx:id="itemsView" prefHeight="326.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
                </center>
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="saveToExcelButton" alignment="CENTER" mnemonicParsing="false" onAction="#saveToCsv" prefHeight="30.0" prefWidth="170.0" text="сохранить в файл Excel" />
+                     </children>
+                  </HBox>
+               </bottom>
             </BorderPane>
          </children>
       </VBox>

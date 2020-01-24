@@ -12,7 +12,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>11</javafx.version>
+        <javafx.version>11.0.1</javafx.version>
         <opencsv.version>5.0</opencsv.version>
         <tess4j.version>4.4.1</tess4j.version>
         <java.version>11</java.version>

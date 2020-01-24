@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.TutorialController">
+   <children>
+      <GridPane layoutY="-1.0" prefHeight="194.0" prefWidth="402.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-1.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="173.0" minWidth="10.0" prefWidth="107.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="180.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="44.0" prefWidth="157.0" text="название" textAlignment="CENTER" wrapText="true" />
+            <TextField fx:id="nameField" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" />
+            <Label prefHeight="44.0" prefWidth="157.0" text="город" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label prefHeight="44.0" prefWidth="157.0" text="Издательство" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="3" />
+            <TextField fx:id="publisherField" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefHeight="44.0" prefWidth="157.0" text="год" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="4" />
+            <Label prefHeight="44.0" prefWidth="157.0" text="страниц" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="5" />
+            <TextField fx:id="pagesField" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="yearField" prefHeight="25.0" prefWidth="418.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="44.0" prefWidth="157.0" text="редактор" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+            <TextField fx:id="editorField" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

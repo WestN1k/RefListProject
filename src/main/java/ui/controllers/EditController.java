@@ -113,6 +113,27 @@ public class EditController {
                 case "Авторефераты":
                     loadPane("/fxml/editTypes/synopsis.fxml");
                     break;
+                case "Диссертации":
+                    loadPane("/fxml/editTypes/dissertation.fxml");
+                    break;
+                case "Обзоры (аналитика)":
+                    loadPane("/fxml/editTypes/review.fxml");
+                    break;
+                case "Патенты":
+                    loadPane("/fxml/editTypes/patents.fxml");
+                    break;
+                case "Материалы конференций":
+                    loadPane("/fxml/editTypes/conference.fxml");
+                    break;
+                case "Интернет-документы":
+                    loadPane("/fxml/editTypes/web-document.fxml");
+                    break;
+                case "Учебные пособия":
+                    loadPane("/fxml/editTypes/tutorial.fxml");
+                    break;
+                case "Словари":
+                    loadPane("/fxml/editTypes/dictionary.fxml");
+                    break;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -159,6 +180,7 @@ public class EditController {
         item.setTopic(controller.getTopic());
         item.setUrl(controller.getUrl());
         item.setWorkStatus(controller.getWorkStatus());
+        item.setNumPatent(controller.getNumPatent());
 
         item.setYear(Integer.parseInt(controller.getYearField()));
         item.setPages(Integer.parseInt(controller.getPagesField()));
@@ -166,7 +188,6 @@ public class EditController {
         item.setStartPage(Integer.parseInt(controller.getStartPage()));
         item.setEndPage(Integer.parseInt(controller.getEndPage()));
         item.setNumBull(Integer.parseInt(controller.getNumBull()));
-        item.setNumPatent(Integer.parseInt(controller.getNumPatent()));
 
         okClicked = true;
         dialogStage.close();

@@ -1,5 +1,7 @@
 package logic.model;
 
+import logic.format.FormatText;
+
 import java.util.ArrayList;
 
 public class CommonItem {
@@ -29,7 +31,7 @@ public class CommonItem {
     private String editor;
 
     //для патентов
-    private int numPatent;
+    private String numPatent;
     private int numBull;
 
     //для материалов конференций
@@ -101,11 +103,11 @@ public class CommonItem {
         this.editor = editor;
     }
 
-    public int getNumPatent() {
+    public String getNumPatent() {
         return numPatent;
     }
 
-    public void setNumPatent(int numPatent) {
+    public void setNumPatent(String numPatent) {
         this.numPatent = numPatent;
     }
 
@@ -203,5 +205,9 @@ public class CommonItem {
             stringAuthors.add(author.getShortRecord());
         }
         return String.join(", ", stringAuthors);
+    }
+
+    public String[] getFormattedText() {
+        return new String[]{new FormatText().getFormatText(this)};
     }
 }

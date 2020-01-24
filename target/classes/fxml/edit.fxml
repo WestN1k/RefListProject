@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="489.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.EditController">
+<AnchorPane prefHeight="554.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.EditController">
    <children>
-      <VBox prefHeight="503.0" prefWidth="328.0">
+      <VBox prefHeight="554.0" prefWidth="328.0">
          <children>
             <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="333.0" text="Создать запись">
                <font>
@@ -54,8 +54,14 @@
                      </padding>
                   </ListView>
                </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
             </Pane>
-            <Pane fx:id="EditContentPane" prefHeight="275.0" prefWidth="343.0" />
+            <Pane fx:id="EditContentPane" prefHeight="305.0" prefWidth="328.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin></Pane>
             <HBox alignment="CENTER" prefHeight="28.0" prefWidth="280.0" spacing="20.0">
                <children>
                   <Button mnemonicParsing="false" onAction="#handleOk" prefHeight="25.0" prefWidth="121.0" text="создать" />

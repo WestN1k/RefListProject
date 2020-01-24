@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
-public class ManualController extends CommonController{
+public class DictionaryController extends CommonController{
 
     @FXML
     private TextField nameField;
@@ -56,7 +56,7 @@ public class ManualController extends CommonController{
     }
 
     public String getType() {
-        return "Учебники";
+        return "Словари";
     }
 
 }

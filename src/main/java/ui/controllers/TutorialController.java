@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
-public class ManualController extends CommonController{
+public class TutorialController extends CommonController {
 
     @FXML
     private TextField nameField;
@@ -16,6 +16,8 @@ public class ManualController extends CommonController{
     private TextField yearField;
     @FXML
     private TextField pagesField;
+    @FXML
+    private TextField editorField;
 
     @Override
     public void setItem(CommonItem item) {
@@ -25,13 +27,14 @@ public class ManualController extends CommonController{
             yearField.setText(Integer.toString(item.getYear()));
             pagesField.setText(Integer.toString(item.getPages()));
             cityField.setText(item.getCity());
-
+            editorField.setText(item.getEditor());
         } else {
             nameField.setText("");
             publisherField.setText("");
             yearField.setText("");
             pagesField.setText("");
             cityField.setText("");
+            editorField.setText("");
         }
     }
 
@@ -55,8 +58,13 @@ public class ManualController extends CommonController{
         return pagesField.getText();
     }
 
-    public String getType() {
-        return "Учебники";
+    @Override
+    public String getEditor() {
+        return editorField.getText();
     }
 
+    @Override
+    public String getType() {
+        return "Учебные пособия";
+    }
 }

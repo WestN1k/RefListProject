@@ -200,10 +200,10 @@ public class EditController {
             item.setUrl(controller.getUrl());
             item.setWorkStatus(controller.getWorkStatus());
             item.setNumPatent(controller.getNumPatent());
+            item.setNumJournal(controller.getNumberField());
 
             item.setYear(Integer.parseInt(controller.getYearField()));
             item.setPages(Integer.parseInt(controller.getPagesField()));
-            item.setNumJournal(Integer.parseInt(controller.getNumberField()));
             item.setStartPage(Integer.parseInt(controller.getStartPage()));
             item.setEndPage(Integer.parseInt(controller.getEndPage()));
             item.setNumBull(Integer.parseInt(controller.getNumBull()));

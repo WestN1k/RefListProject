@@ -1,6 +1,9 @@
 package ui.controllers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
@@ -8,24 +11,37 @@ public class SynopsisController extends CommonController{
     @FXML
     private TextField nameField;
     @FXML
-    private TextField regalyAuthorField;
+    private ChoiceBox<String> regalyAuthorField;
     @FXML
     private TextField cityField;
     @FXML
     private TextField yearField;
     @FXML
     private TextField pagesField;
+    @FXML
+    private TextField workStatusField;
+
+
+    @FXML
+    private void initialize() {
+        ObservableList<String> regalyAuthorsList = FXCollections.observableArrayList(
+                "д-р мед. наук", "канд. мед. наук", "доц.", "проф.", "ст. науч. сотр.", "мл. науч. сотр.", "акад.");
+        regalyAuthorField.setItems(regalyAuthorsList);
+        regalyAuthorField.getSelectionModel().selectFirst();
+    }
 
     @Override
     public void setItem(CommonItem item) {
         if (item != null) {
             nameField.setText(item.getName());
-            regalyAuthorField.setText(item.getRegaliaAuthor());
+            regalyAuthorField.getSelectionModel().select(item.getRegaliaAuthor());
             yearField.setText(Integer.toString(item.getYear()));
             cityField.setText(item.getCity());
             pagesField.setText(Integer.toString(item.getPages()));
+            workStatusField.setText(item.getWorkStatus());
         } else {
-            regalyAuthorField.setText("");
+//            regalyAuthorField.setText("");
+            workStatusField.setText("");
             cityField.setText("");
             pagesField.setText("");
             nameField.setText("");
@@ -39,7 +55,7 @@ public class SynopsisController extends CommonController{
 
     @Override
     public String getRegaliaAuthor() {
-        return regalyAuthorField.getText();
+        return regalyAuthorField.getSelectionModel().getSelectedItem();
     }
 
     public String getYearField() {
@@ -52,6 +68,10 @@ public class SynopsisController extends CommonController{
 
     public String getPagesField() {
         return pagesField.getText();
+    }
+
+    public String getWorkStatus() {
+        return workStatusField.getText();
     }
 
     @Override

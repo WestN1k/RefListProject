@@ -36,7 +36,7 @@ public final class FormatText {
         Map<String, String> map = new HashMap<>();
         map.put("автор", item.getAuthor(0).getShortRecordWithComma());
         map.put("название", item.getName());
-        map.put("номер", getIntegerToString(item.getNumJournal()));
+        map.put("номер", item.getNumJournal());
         map.put("регалии", item.getRegaliaAuthor());
         map.put("специализация", item.getWorkStatus());
         map.put("год", getIntegerToString(item.getYear()));
@@ -105,13 +105,13 @@ public final class FormatText {
                 getFormattedListAuthors(),
                 item.getPublisher(),
                 getIntegerToString(item.getYear()),
-                getIntegerToString(item.getNumJournal()),
+                item.getNumJournal(),
                 getFormattedPages());
     }
 
     private String getFormatTextSynopsis() {
         return MessageFormat.format("{0} {1}: Автореф.дис. ...{2}: {3} / {4} - {5}, {6}. - {7}",
-                item.getAuthor(0),
+                item.getAuthor(0).getShortRecordWithComma(),
                 item.getName(),
                 item.getRegaliaAuthor(),
                 item.getWorkStatus(),
@@ -156,6 +156,11 @@ public final class FormatText {
             if (item.getStartPage() == item.getEndPage()) {
                 return ("С. " + item.getStartPage());
             } else {
+                if (item.getItemType().equals("Диссертации")) {
+                    return ("С. " + getIntegerToString(item.getStartPage())
+                            + "-" + getIntegerToString(item.getEndPage()));
+                }
+
                 return (getIntegerToString(item.getStartPage()) + "-" + getIntegerToString(item.getEndPage()) + " с.");
             }
         }

@@ -17,7 +17,7 @@ public class CommonItem {
     private String date;
 
     //для статьи, монографии
-    private int numJournal;
+    private String numJournal;
     private int startPage;
     private int endPage;
 
@@ -55,11 +55,11 @@ public class CommonItem {
         this.date = date;
     }
 
-    public int getNumJournal() {
+    public String getNumJournal() {
         return numJournal;
     }
 
-    public void setNumJournal(int numJournal) {
+    public void setNumJournal(String numJournal) {
         this.numJournal = numJournal;
     }
 

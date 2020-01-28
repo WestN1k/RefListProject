@@ -29,7 +29,7 @@ public class MonographyController extends CommonController {
             nameField.setText(item.getName());
             publisherField.setText(item.getPublisher());
             yearField.setText(Integer.toString(item.getYear()));
-            numberField.setText(Integer.toString(item.getNumJournal()));
+            numberField.setText(item.getNumJournal());
             startPage.setText(Integer.toString(item.getStartPage()));
             endPage.setText(Integer.toString(item.getEndPage()));
         } else {

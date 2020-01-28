@@ -1,6 +1,9 @@
 package ui.controllers;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
@@ -8,7 +11,7 @@ public class DissertationController extends CommonController{
     @FXML
     private TextField nameField;
     @FXML
-    private TextField regalyAuthorField;
+    private ChoiceBox<String> regalyAuthorField;
     @FXML
     private TextField workStatusField;
     @FXML
@@ -22,11 +25,19 @@ public class DissertationController extends CommonController{
     @FXML
     private TextField endPage;
 
+    @FXML
+    private void initialize() {
+        ObservableList<String> regalyAuthorsList = FXCollections.observableArrayList(
+                "д-р мед. наук", "канд. мед. наук", "доц.", "проф.", "ст. науч. сотр.", "мл. науч. сотр.", "акад.");
+        regalyAuthorField.setItems(regalyAuthorsList);
+        regalyAuthorField.getSelectionModel().selectFirst();
+    }
+
     @Override
     public void setItem(CommonItem item) {
         if (item != null) {
             nameField.setText(item.getName());
-            regalyAuthorField.setText(item.getRegaliaAuthor());
+            regalyAuthorField.getSelectionModel().select(item.getRegaliaAuthor());
             yearField.setText(Integer.toString(item.getYear()));
             workStatusField.setText(item.getWorkStatus());
             cityField.setText(item.getCity());
@@ -35,7 +46,7 @@ public class DissertationController extends CommonController{
             endPage.setText(Integer.toString(item.getEndPage()));
         } else {
             workStatusField.setText("");
-            regalyAuthorField.setText("");
+//            regalyAuthorField.setText("");
             cityField.setText("");
             nameField.setText("");
             yearField.setText("");
@@ -77,7 +88,7 @@ public class DissertationController extends CommonController{
 
     @Override
     public String getRegaliaAuthor() {
-        return regalyAuthorField.getText();
+        return regalyAuthorField.getSelectionModel().getSelectedItem();
     }
 
     @Override

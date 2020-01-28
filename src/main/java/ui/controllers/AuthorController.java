@@ -66,8 +66,8 @@ public class AuthorController {
         return okClicked;
     }
 
-    public Author getAuthor(){
-        return this.author;
+    public void deleteAuthor() {
+        
     }
 
 }

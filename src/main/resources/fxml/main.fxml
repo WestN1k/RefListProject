@@ -28,7 +28,7 @@
                             </Menu>
                             <Menu mnemonicParsing="false" text="настройки">
                               <items>
-                                <MenuItem mnemonicParsing="false" text="удалить" />
+                                <MenuItem mnemonicParsing="false" onAction="#addProperty" text="системные настройки" />
                               </items>
                             </Menu>
                             <Menu mnemonicParsing="false" text="помощь">
@@ -39,12 +39,17 @@
                             </Menu>
                           </menus>
                         </MenuBar>
-                        <HBox prefHeight="66.0" prefWidth="600.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="66.0" prefWidth="600.0">
                            <children>
                               <Button fx:id="add_item_button" mnemonicParsing="false" onAction="#addNewItem" prefHeight="30.0" prefWidth="150.0" text="добавить запись" textAlignment="CENTER">
                                  <opaqueInsets>
                                     <Insets />
                                  </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" left="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="deleteItemButton" mnemonicParsing="false" onAction="#deleteItem" prefHeight="30.0" text="удалить запись">
                                  <HBox.margin>
                                     <Insets bottom="10.0" left="10.0" top="10.0" />
                                  </HBox.margin>

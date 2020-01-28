@@ -40,7 +40,12 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="60.0" prefWidth="330.0" spacing="10.0">
                      <children>
-                        <Button fx:id="addAuthorsButton" mnemonicParsing="false" onAction="#addNewAuthor" text="Добавить авторa" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="addAuthorsButton" mnemonicParsing="false" onAction="#addNewAuthor" prefHeight="25.0" prefWidth="140.0" text="Добавить авторa" />
+                              <Button fx:id="deleteAuthorButton" mnemonicParsing="false" onAction="#deleteAuthor" text="Удалить автора" />
+                           </children>
+                        </HBox>
                         <Label text="не более четырех авторов" />
                      </children>
                   </VBox>

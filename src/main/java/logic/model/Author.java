@@ -44,7 +44,7 @@ public class Author {
     }
 
     public String getShortRecord() {
-        return getSurname() + " " + getName().substring(0, 1) + "." + getPatronymic().substring(0, 1) + ".";
+        return getName().substring(0, 1) + "." + getPatronymic().substring(0, 1) + ". " + getSurname();
     }
 
     public String getFullRecord() {

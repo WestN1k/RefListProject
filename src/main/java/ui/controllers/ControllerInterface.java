@@ -2,7 +2,7 @@ package ui.controllers;
 
 import logic.model.CommonItem;
 
-public interface Controller {
+public interface ControllerInterface {
     void setItem(CommonItem item);
     String getNameField();
     String getPublisherField();

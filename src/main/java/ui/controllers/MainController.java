@@ -7,6 +7,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseButton;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
+import logic.AppProperties;
 import logic.ToCSV;
 import logic.format.FormatText;
 import logic.model.Author;
@@ -25,6 +26,8 @@ public class MainController {
 
     @FXML
     private Button add_item_button;
+    @FXML
+    private Button deleteItemButton;
 
     @FXML
     private ListView<CommonItem> itemsView = new ListView<>();
@@ -53,6 +56,7 @@ public class MainController {
                     setText("");
                 } else {
                     setText(format.getFormatText(item));
+                    deleteItemButton.setDisable(false);
                 }
             }
         });
@@ -65,6 +69,7 @@ public class MainController {
             }
         });
 
+        deleteItemButton.setDisable(true);
     }
 
     @FXML
@@ -77,6 +82,14 @@ public class MainController {
     }
 
     @FXML
+    public void deleteItem(ActionEvent event) {
+        int index = itemsView.getSelectionModel().getSelectedIndex();
+        if (index > -1) {
+            itemsView.getItems().remove(index);
+        }
+    }
+
+    @FXML
     public void saveToCsv(ActionEvent event) throws FileNotFoundException, UnsupportedEncodingException {
         ObservableList<CommonItem> valuesList = itemsView.getItems();
         if (valuesList.isEmpty()) {
@@ -84,10 +97,10 @@ public class MainController {
         } else {
             boolean result = ToCSV.addToCSV(getCurrentFolder() + CSV_NAME, valuesList);
             if (result) {
-                showAlert.showAlert("файл с данными создан", Alert.AlertType.CONFIRMATION);
+                showAlert.showAlert("отчет создан", Alert.AlertType.CONFIRMATION);
                 clearTable();
             } else {
-                showAlert.showAlert("произошла ошибка при сохранении файла с результатом", Alert.AlertType.ERROR);
+                showAlert.showAlert("произошла ошибка при сохранении отчета", Alert.AlertType.ERROR);
             }
         }
     }
@@ -112,9 +125,13 @@ public class MainController {
         if (dir != null) {
             return dir.getAbsolutePath();
         }
-
         return null;
     }
 
+    @FXML
+    private void addProperty() {
+//        AppProperties appProperties = new AppProperties();
+//        appProperties.setProperties("name", "this is pattern");
+    }
 
 }

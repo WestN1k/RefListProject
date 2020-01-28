@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import logic.model.CommonItem;
 
-public class CommonController implements Controller {
+public class CommonController implements ControllerInterface {
 
     @Override
     public void setItem(CommonItem item) {
@@ -94,4 +94,5 @@ public class CommonController implements Controller {
     public String getUrl() {
         return null;
     }
+
 }

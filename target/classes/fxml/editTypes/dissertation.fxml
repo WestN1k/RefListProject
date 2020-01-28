@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -9,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controllers.DissertationController">
    <children>
-      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="310.0">
+      <VBox alignment="CENTER" prefHeight="275.0" prefWidth="310.0">
          <children>
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
@@ -26,19 +27,15 @@
             <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
                <children>
                   <Label prefHeight="44.0" prefWidth="157.0" text="регалии автора" textAlignment="CENTER" wrapText="true" />
-                  <TextField fx:id="regalyAuthorField" prefHeight="25.0" prefWidth="244.0">
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </TextField>
+                  <ChoiceBox fx:id="regalyAuthorField" prefHeight="25.0" prefWidth="244.0" />
                </children>
                <padding>
                   <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
                </padding>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="27.0" prefWidth="286.0" spacing="10.0">
+            <HBox alignment="CENTER" prefHeight="83.0" prefWidth="310.0" spacing="10.0">
                <children>
-                  <Label prefHeight="44.0" prefWidth="157.0" text="статус работы" textAlignment="CENTER" wrapText="true" />
+                  <Label prefHeight="44.0" prefWidth="157.0" text="номер специальности" wrapText="true" />
                   <TextField fx:id="workStatusField" prefHeight="25.0" prefWidth="244.0">
                      <HBox.margin>
                         <Insets />

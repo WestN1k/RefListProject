@@ -199,14 +199,6 @@ public class CommonItem {
         authors.clear();
     }
 
-    public String getStringAuthors() {
-        ArrayList<String> stringAuthors = new ArrayList<>();
-        for(Author author: getAuthors()) {
-            stringAuthors.add(author.getShortRecord());
-        }
-        return String.join(", ", stringAuthors);
-    }
-
     public String[] getFormattedText() {
         return new String[]{new FormatText().getFormatText(this)};
     }

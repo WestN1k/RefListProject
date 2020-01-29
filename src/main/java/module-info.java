@@ -1,11 +1,10 @@
 module RefList {
-    requires javafx.fxml;
     requires javafx.controls;
     requires javafx.graphics;
     requires javafx.base;
+    requires javafx.fxml;
     requires opencsv;
 
-    opens ui.controllers to javafx.graphics, javafx.fxml;
-    opens ui to javafx.graphics;
-    exports ui;
+    opens com.yamanov.ui.controllers to javafx.graphics, javafx.fxml;
+    opens com.yamanov.ui to javafx.graphics;
 }

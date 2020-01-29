@@ -9,5 +9,15 @@
         <module name="RefList" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="m" target="11" />
+      <module name="main.RefList" target="11" />
+      <module name="mo" target="11" />
+      <module name="module" target="11" />
+      <module name="Re" target="11" />
+      <module name="Ref" target="11" />
+      <module name="RefList (1)" target="11" />
+      <module name="ui." target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

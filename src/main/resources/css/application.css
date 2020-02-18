@@ -1,0 +1,7 @@
+.fieldError {
+    -fx-background-color: #E9967A;
+}
+
+.fieldSuccess {
+    -fx-background-color: #BEF574;
+}

@@ -32,7 +32,6 @@ public class Main extends Application {
         Parent root = loader.load();
         this.rootStage.setTitle("Составление списка литературы по ГОСТ");
         root.getStylesheets().add(getClass().getResource("/css/application.css").toExternalForm());
-
         MainController controller = loader.getController();
         controller.setMainApp(this);
 

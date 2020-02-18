@@ -57,6 +57,8 @@ public class AuthorController {
             author.setPatronymic(authorPatronymicField.getText());
             okClicked = true;
             dialogStage.close();
+        } else {
+            System.out.println("not valid");
         }
     }
 

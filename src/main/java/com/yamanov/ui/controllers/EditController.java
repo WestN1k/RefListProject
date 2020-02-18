@@ -76,6 +76,7 @@ public class EditController {
         deleteAuthorButton.setDisable(true);
 
         authorsListView.setCellFactory(param -> new ListCell<Author>() {
+
             @Override
             protected void updateItem(Author item, boolean empty) {
                 super.updateItem(item, empty);
@@ -87,8 +88,6 @@ public class EditController {
 
                 if (authorsListView.getItems().size() > 0) {
                     deleteAuthorButton.setDisable(false);
-                } else {
-                    deleteAuthorButton.setDisable(true);
                 }
             }
         });
@@ -96,7 +95,6 @@ public class EditController {
         authorsListView.setOnMouseClicked(event -> {
             if(event.getButton() == MouseButton.PRIMARY && event.getClickCount() == 2) {
                 System.out.println(authorsListView.getSelectionModel().getSelectedItem());
-
                 addEditAuthor(authorsListView.getSelectionModel().getSelectedItem());
             }
         });
@@ -225,20 +223,29 @@ public class EditController {
         Author tempAuthor = new Author();
         boolean okClicked = mainApp.showAuthorEditDialog(tempAuthor);
         addAuthorsButton.setDisable(false);
-        if (countAuthors < MAX_COUNT_AUTHORS) {
-            if (okClicked) {
+        if (okClicked) {
+            if(isNullOrEmpty(tempAuthor.getName()) ||
+                    isNullOrEmpty(tempAuthor.getSurname()) ||
+                    isNullOrEmpty(tempAuthor.getPatronymic())) {
+                show.showAlert("Не все поля заполнены", Alert.AlertType.WARNING);
+                addEditAuthor(tempAuthor);
+            } else {
                 authorsListView.getItems().add(tempAuthor);
                 countAuthors += 1;
             }
-        } else {
-            addAuthorsButton.setDisable(true);
         }
     }
 
     private void addEditAuthor(Author author) {
         boolean okClicked = mainApp.showAuthorEditDialog(author);
         if (okClicked) {
-            authorsListView.refresh();
+            if(isNullOrEmpty(author.getName()) ||
+                    isNullOrEmpty(author.getSurname()) ||
+                    isNullOrEmpty(author.getPatronymic())) {
+                show.showAlert("Не все поля заполнены", Alert.AlertType.WARNING);
+            } else {
+                authorsListView.refresh();
+            }
         }
     }
 
@@ -254,10 +261,16 @@ public class EditController {
         try {
 
             return true;
-        } catch (Exception e) {
+        } catch (NullPointerException e) {
             e.printStackTrace();
             return false;
+        } catch (Exception e) {
+            return false;
         }
+    }
+
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.trim().length() == 0;
     }
 
 }

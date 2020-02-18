@@ -7,94 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1bb3b86-ca75-4baa-b9bb-941d1f0b60cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RefList.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dependency-reduced-pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/AppProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/AppProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/ToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/ToCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/format/FormatText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/format/FormatText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/model/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logic/model/CommonItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/model/CommonItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/ShowAlert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/ShowAlert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/AuthorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/ConferenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ConferenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/ControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ControllerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/DissertationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DissertationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/JournalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/ManualController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ManualController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/MonographyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MonographyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/PatentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/PatentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/SynopsisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/SynopsisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/TutorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/controllers/WebDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/WebDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/author.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/edit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/conference.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/conference.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/dictionary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/dictionary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/dissertation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/dissertation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/journal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/journal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/manual.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/manual.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/monography.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/monography.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/patents.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/patents.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/review.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/review.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/synopsis.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/synopsis.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/tutorial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/web-document.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/editTypes/web-document.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/author.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/author.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/edit.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/edit.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/conference.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/conference.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/dictionary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/dictionary.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/dissertation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/dissertation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/journal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/journal.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/manual.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/manual.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/monography.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/monography.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/patents.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/patents.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/review.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/review.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/synopsis.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/synopsis.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/tutorial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/tutorial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/editTypes/web-document.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/editTypes/web-document.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/AppProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/ToCSV.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/format/FormatText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/model/Author.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logic/model/CommonItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Launcher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/ShowAlert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/AuthorController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/CommonController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/ConferenceController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/ControllerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/DictionaryController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/DissertationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/EditController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/EditController$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/EditController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/JournalController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/MainController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/ManualController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/MonographyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/PatentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/ReviewController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/SynopsisController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/TutorialController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ui/controllers/WebDocumentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/EditController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,10 +170,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1579868719698" />
-    <state x="952" y="215" key="#com.intellij.ide.util.MemberChooser" timestamp="1579846889628">
+    <state x="1012" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1582023528462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="952" y="215" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1579846889628" />
+    <state x="1012" y="283" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1582023528462" />
     <state x="690" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580277672448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -278,38 +194,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="866" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580285059404" />
-    <state width="1876" height="269" key="GridCell.Tab.0.bottom" timestamp="1580298701589">
+    <state width="1876" height="269" key="GridCell.Tab.0.bottom" timestamp="1582030417749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580298701589" />
-    <state width="1876" height="269" key="GridCell.Tab.0.center" timestamp="1580298701589">
+    <state width="1876" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582030417749" />
+    <state width="1876" height="269" key="GridCell.Tab.0.center" timestamp="1582030417749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580298701589" />
-    <state width="1876" height="269" key="GridCell.Tab.0.left" timestamp="1580298701589">
+    <state width="1876" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582030417749" />
+    <state width="1876" height="269" key="GridCell.Tab.0.left" timestamp="1582030417749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580298701589" />
-    <state width="1876" height="269" key="GridCell.Tab.0.right" timestamp="1580298701589">
+    <state width="1876" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582030417749" />
+    <state width="1876" height="269" key="GridCell.Tab.0.right" timestamp="1582030417749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580298701589" />
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1580131490028">
+    <state width="1876" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582030417749" />
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1581488466913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580131490028" />
-    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1580131490028">
+    <state width="1876" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581488466913" />
+    <state width="1876" height="342" key="GridCell.Tab.1.center" timestamp="1581488466913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580131490028" />
-    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1580131490028">
+    <state width="1876" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581488466913" />
+    <state width="1876" height="342" key="GridCell.Tab.1.left" timestamp="1581488466913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580131490028" />
-    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1580131490028">
+    <state width="1876" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581488466913" />
+    <state width="1876" height="342" key="GridCell.Tab.1.right" timestamp="1581488466913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580131490028" />
+    <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581488466913" />
     <state x="461" y="151" key="SettingsEditor" timestamp="1580283601763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

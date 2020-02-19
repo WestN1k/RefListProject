@@ -19,6 +19,7 @@ import com.yamanov.ui.Main;
 import com.yamanov.ui.ShowAlert;
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 
 public class EditController {
     private final static int MAX_COUNT_AUTHORS = 4;
@@ -180,36 +181,40 @@ public class EditController {
 
     @FXML
     private void handleOk() {
-        if (isInputValid()) {
-            item.clearAuthorsList();
 
-            for (Author author: authorsListView.getItems()) {
-                item.setAuthor(author);
+        try {
+            if (isInputValid()) {
+                item.clearAuthorsList();
+
+                for (Author author: authorsListView.getItems()) {
+                    item.setAuthor(author);
+                }
+
+                item.setName(controller.getNameField());
+                item.setPublisher(controller.getPublisherField());
+                item.setCity(controller.getCityField());
+                item.setItemType(controller.getType());
+                item.setDate(controller.getDate());
+                item.setEditor(controller.getEditor());
+                item.setRegaliaAuthor(controller.getRegaliaAuthor());
+                item.setTopic(controller.getTopic());
+                item.setUrl(controller.getUrl());
+                item.setWorkStatus(controller.getWorkStatus());
+                item.setNumPatent(controller.getNumPatent());
+                item.setNumJournal(controller.getNumberField());
+
+                item.setYear(Integer.parseInt(controller.getYearField()));
+                item.setPages(Integer.parseInt(controller.getPagesField()));
+                item.setStartPage(Integer.parseInt(controller.getStartPage()));
+                item.setEndPage(Integer.parseInt(controller.getEndPage()));
+                item.setNumBull(Integer.parseInt(controller.getNumBull()));
+
+                okClicked = true;
+                dialogStage.close();
             }
 
-            item.setName(controller.getNameField());
-            item.setPublisher(controller.getPublisherField());
-            item.setCity(controller.getCityField());
-            item.setItemType(controller.getType());
-            item.setDate(controller.getDate());
-            item.setEditor(controller.getEditor());
-            item.setRegaliaAuthor(controller.getRegaliaAuthor());
-            item.setTopic(controller.getTopic());
-            item.setUrl(controller.getUrl());
-            item.setWorkStatus(controller.getWorkStatus());
-            item.setNumPatent(controller.getNumPatent());
-            item.setNumJournal(controller.getNumberField());
-
-            item.setYear(Integer.parseInt(controller.getYearField()));
-            item.setPages(Integer.parseInt(controller.getPagesField()));
-            item.setStartPage(Integer.parseInt(controller.getStartPage()));
-            item.setEndPage(Integer.parseInt(controller.getEndPage()));
-            item.setNumBull(Integer.parseInt(controller.getNumBull()));
-
-            okClicked = true;
-            dialogStage.close();
-        } else {
-            show.showAlert("ошибка обработки текста", Alert.AlertType.ERROR);
+        } catch (Exception e) {
+            show.showAlert("Неизвестная ошибка", Alert.AlertType.ERROR);
         }
     }
 
@@ -227,7 +232,6 @@ public class EditController {
             if(isNullOrEmpty(tempAuthor.getName()) ||
                     isNullOrEmpty(tempAuthor.getSurname()) ||
                     isNullOrEmpty(tempAuthor.getPatronymic())) {
-                show.showAlert("Не все поля заполнены", Alert.AlertType.WARNING);
                 addEditAuthor(tempAuthor);
             } else {
                 authorsListView.getItems().add(tempAuthor);
@@ -239,13 +243,13 @@ public class EditController {
     private void addEditAuthor(Author author) {
         boolean okClicked = mainApp.showAuthorEditDialog(author);
         if (okClicked) {
-            if(isNullOrEmpty(author.getName()) ||
-                    isNullOrEmpty(author.getSurname()) ||
-                    isNullOrEmpty(author.getPatronymic())) {
-                show.showAlert("Не все поля заполнены", Alert.AlertType.WARNING);
-            } else {
+//            if(isNullOrEmpty(author.getName()) ||
+//                    isNullOrEmpty(author.getSurname()) ||
+//                    isNullOrEmpty(author.getPatronymic())) {
+//                show.showAlert("Не все поля заполнены", Alert.AlertType.WARNING);
+//            } else {
                 authorsListView.refresh();
-            }
+//            }
         }
     }
 
@@ -260,7 +264,18 @@ public class EditController {
     private boolean isInputValid(){
         try {
 
+            if (isNullOrEmpty(this.source_view_choice_box.getValue()) && isNullOrEmpty(this.item.getItemType())) {
+                show.showAlert("Не выбран тип записи", Alert.AlertType.WARNING);
+                return false;
+            }
+
+            if (authorsListView.getItems().isEmpty()) {
+                show.showAlert("Нет авторов", Alert.AlertType.WARNING);
+                return false;
+            }
+
             return true;
+
         } catch (NullPointerException e) {
             e.printStackTrace();
             return false;
@@ -271,6 +286,17 @@ public class EditController {
 
     public static boolean isNullOrEmpty(String str) {
         return str == null || str.trim().length() == 0;
+    }
+
+    private static boolean validatePattern(String str) {
+        String stringPattern = "[а-яА-Яa-zA-Z'\\-]+";
+        Pattern pattern = Pattern.compile(stringPattern);
+
+        try{
+            return pattern.matcher(str).matches();
+        } catch (NullPointerException e){
+            return false;
+        }
     }
 
 }

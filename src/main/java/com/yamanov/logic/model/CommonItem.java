@@ -11,15 +11,15 @@ public class CommonItem {
     private ArrayList<Author> authors = new ArrayList<>();
     private String publisher;  // издательство/журнал
     private String city;
-    private int year;
-    private int pages;
+    private Integer year;
+    private Integer pages;
 
     private String date;
 
     //для статьи, монографии
     private String numJournal;
-    private int startPage;
-    private int endPage;
+    private Integer startPage;
+    private Integer endPage;
 
     //для автореферата/диссертации
     private String regaliaAuthor;
@@ -32,7 +32,7 @@ public class CommonItem {
 
     //для патентов
     private String numPatent;
-    private int numBull;
+    private Integer numBull;
 
     //для материалов конференций
     private String topic;
@@ -63,19 +63,19 @@ public class CommonItem {
         this.numJournal = numJournal;
     }
 
-    public int getStartPage() {
+    public Integer getStartPage() {
         return startPage;
     }
 
-    public void setStartPage(int startPage) {
+    public void setStartPage(Integer startPage) {
         this.startPage = startPage;
     }
 
-    public int getEndPage() {
+    public Integer getEndPage() {
         return endPage;
     }
 
-    public void setEndPage(int endPage) {
+    public void setEndPage(Integer endPage) {
         this.endPage = endPage;
     }
 
@@ -111,11 +111,11 @@ public class CommonItem {
         this.numPatent = numPatent;
     }
 
-    public int getNumBull() {
+    public Integer getNumBull() {
         return numBull;
     }
 
-    public void setNumBull(int numBull) {
+    public void setNumBull(Integer numBull) {
         this.numBull = numBull;
     }
 
@@ -147,7 +147,7 @@ public class CommonItem {
         authors.add(author);
     }
 
-    public Author getAuthor(int index) {
+    public Author getAuthor(Integer index) {
         return getAuthors().get(index);
     }
 
@@ -179,19 +179,19 @@ public class CommonItem {
         this.city = city;
     }
 
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(Integer year) {
         this.year = year;
     }
 
-    public int getPages() {
+    public Integer getPages() {
         return pages;
     }
 
-    public void setPages(int pages) {
+    public void setPages(Integer pages) {
         this.pages = pages;
     }
 

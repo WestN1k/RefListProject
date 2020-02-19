@@ -1,8 +1,12 @@
 package com.yamanov.ui.controllers;
 
 import com.yamanov.logic.model.CommonItem;
+import javafx.scene.control.Control;
+
+import java.util.List;
 
 public interface ControllerInterface {
+    void initialize();
     void setItem(CommonItem item);
     String getNameField();
     String getPublisherField();
@@ -21,4 +25,5 @@ public interface ControllerInterface {
     String getNumBull();
     String getTopic();
     String getUrl();
+    List<Control> getAllNotNullFields();
 }

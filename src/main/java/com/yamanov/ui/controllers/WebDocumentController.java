@@ -6,12 +6,6 @@ import javafx.scene.control.TextField;
 import com.yamanov.logic.model.CommonItem;
 
 public class WebDocumentController extends CommonController {
-    @FXML
-    private TextField nameField;
-    @FXML
-    private TextArea urlField;
-    @FXML
-    private TextField dateField;
 
     @Override
     public void setItem(CommonItem item) {

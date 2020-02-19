@@ -6,34 +6,24 @@ import com.yamanov.logic.model.CommonItem;
 
 public class DictionaryController extends CommonController{
 
-    @FXML
-    private TextField nameField;
-    @FXML
-    private TextField cityField;
-    @FXML
-    private TextField publisherField;
-    @FXML
-    private TextField yearField;
-    @FXML
-    private TextField pagesField;
-
-    @Override
-    public void setItem(CommonItem item) {
-        if (item != null) {
-            nameField.setText(item.getName());
-            publisherField.setText(item.getPublisher());
-            yearField.setText(Integer.toString(item.getYear()));
-            pagesField.setText(Integer.toString(item.getPages()));
-            cityField.setText(item.getCity());
-
-        } else {
-            nameField.setText("");
-            publisherField.setText("");
-            yearField.setText("");
-            pagesField.setText("");
-            cityField.setText("");
-        }
-    }
+//
+//    @Override
+//    public void setItem(CommonItem item) {
+//        if (item != null) {
+//            nameField.setText(item.getName());
+//            publisherField.setText(item.getPublisher());
+//            yearField.setText(Integer.toString(item.getYear()));
+//            pagesField.setText(Integer.toString(item.getPages()));
+//            cityField.setText(item.getCity());
+//
+//        } else {
+//            nameField.setText("");
+//            publisherField.setText("");
+//            yearField.setText("");
+//            pagesField.setText("");
+//            cityField.setText("");
+//        }
+//    }
 
     public String getNameField() {
         return nameField.getText();

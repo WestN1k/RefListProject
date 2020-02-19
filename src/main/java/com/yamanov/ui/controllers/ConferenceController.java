@@ -7,42 +7,17 @@ import com.yamanov.logic.model.CommonItem;
 
 public class ConferenceController extends CommonController {
 
-    @FXML
-    private TextField nameField;
-    @FXML
-    private TextArea topicField;
-    @FXML
-    private TextField cityField;
-    @FXML
-    private TextField yearField;
-    @FXML
-    private TextField pagesField;
-    @FXML
-    private TextField startPage;
-    @FXML
-    private TextField endPage;
-
-
-    @Override
-    public void setItem(CommonItem item) {
-        if (item !=null) {
-            nameField.setText(item.getName());
-            topicField.setText(item.getTopic());
-            yearField.setText(Integer.toString(item.getYear()));
-            cityField.setText(item.getCity());
-            pagesField.setText(Integer.toString(item.getPages()));
-            startPage.setText(Integer.toString(item.getStartPage()));
-            endPage.setText(Integer.toString(item.getEndPage()));
-        } else {
-            topicField.setText("");
-            cityField.setText("");
-            nameField.setText("");
-            yearField.setText("");
-            pagesField.setText("");
-            startPage.setText("");
-            endPage.setText("");
-        }
-    }
+//
+//    @Override
+//    public void setItem(CommonItem item) {
+//        nameField.setText(item.getName());
+//        topicField.setText(item.getTopic());
+//        yearField.setText(Integer.toString(item.getYear()));
+//        cityField.setText(item.getCity());
+//        pagesField.setText(Integer.toString(item.getPages()));
+//        startPage.setText(Integer.toString(item.getStartPage()));
+//        endPage.setText(Integer.toString(item.getEndPage()));
+//    }
 
     @Override
     public String getNameField() {

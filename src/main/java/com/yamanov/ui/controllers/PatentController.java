@@ -7,34 +7,23 @@ import com.yamanov.logic.model.CommonItem;
 
 public class PatentController extends CommonController {
 
-    @FXML
-    private TextField nameField;
-    @FXML
-    private TextField yearField;
-    @FXML
-    private TextField patentNumberField;
-    @FXML
-    private TextField bullNumberField;
-    @FXML
-    private TextField dateField;
-
-    @Override
-    public void setItem(CommonItem item) {
-        if (item != null) {
-            nameField.setText(item.getName());
-            yearField.setText(Integer.toString(item.getYear()));
-            patentNumberField.setText(item.getNumPatent());
-            bullNumberField.setText(Integer.toString(item.getNumBull()));
-            dateField.setText(item.getDate());
-        } else {
-            nameField.setText("");
-            yearField.setText("");
-            patentNumberField.setText("");
-            bullNumberField.setText("");
-            dateField.setText("");
-        }
-
-    }
+//    @Override
+//    public void setItem(CommonItem item) {
+//        if (item != null) {
+//            nameField.setText(item.getName());
+//            yearField.setText(Integer.toString(item.getYear()));
+//            patentNumberField.setText(item.getNumPatent());
+//            bullNumberField.setText(Integer.toString(item.getNumBull()));
+//            dateField.setText(item.getDate());
+//        } else {
+//            nameField.setText("");
+//            yearField.setText("");
+//            patentNumberField.setText("");
+//            bullNumberField.setText("");
+//            dateField.setText("");
+//        }
+//
+//    }
 
     @Override
     public String getNameField() {

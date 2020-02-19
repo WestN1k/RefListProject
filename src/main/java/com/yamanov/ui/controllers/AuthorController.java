@@ -4,9 +4,12 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.stage.Stage;
 import com.yamanov.logic.model.Author;
+import javafx.util.converter.IntegerStringConverter;
 
+import java.util.function.UnaryOperator;
 import java.util.regex.Pattern;
 
 public class AuthorController {
@@ -57,8 +60,6 @@ public class AuthorController {
             author.setPatronymic(authorPatronymicField.getText());
             okClicked = true;
             dialogStage.close();
-        } else {
-            System.out.println("not valid");
         }
     }
 
@@ -100,7 +101,7 @@ public class AuthorController {
     }
 
     private static boolean validatePattern(String str) {
-        String stringPattern = "[а-яА-Я\\-]+";
+        String stringPattern = "[а-яА-Яa-zA-Z'\\-]+";
         Pattern pattern = Pattern.compile(stringPattern);
 
         try{

@@ -62,6 +62,11 @@ public class CommonController implements ControllerInterface {
             startPage.setTextFormatter(new TextFormatter<Integer>(new IntegerStringConverter(), null, integerFilter));
         }
 
+        if (endPage != null) {
+            endPage.clear();
+            endPage.setTextFormatter(new TextFormatter<Integer>(new IntegerStringConverter(), null, integerFilter));
+        }
+
         if (yearField != null) {
             yearField.clear();
             yearField.setTextFormatter(new TextFormatter<Integer>(new IntegerStringConverter(), null, integerFilter));
@@ -70,11 +75,6 @@ public class CommonController implements ControllerInterface {
         if (pagesField != null) {
             pagesField.clear();
             pagesField.setTextFormatter(new TextFormatter<Integer>(new IntegerStringConverter(), null, integerFilter));
-        }
-
-        if (endPage != null) {
-            endPage.clear();
-            endPage.setTextFormatter(new TextFormatter<Integer>(new IntegerStringConverter(), null, integerFilter));
         }
 
         if (bullNumberField != null) {
@@ -238,7 +238,7 @@ public class CommonController implements ControllerInterface {
 
     UnaryOperator<TextFormatter.Change> integerFilter = change -> {
         String newText = change.getControlNewText();
-        if(newText.matches("[0-9]+")) {
+        if(newText.matches("[0-9]+") || newText.isEmpty()) {
             return change;
         }
         return null;

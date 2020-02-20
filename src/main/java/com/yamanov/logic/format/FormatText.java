@@ -152,7 +152,7 @@ public final class FormatText {
         if (item.getStartPage() == 0 && item.getEndPage() == 0) {
             return getIntegerToString(item.getPages())  + " с.";
         } else {
-            if (item.getStartPage() == item.getEndPage()) {
+            if (item.getStartPage().equals(item.getEndPage())) {
                 return ("С. " + item.getStartPage());
             } else {
                 if (item.getItemType().equals("Диссертации")) {

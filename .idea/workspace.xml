@@ -8,22 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f1bb3b86-ca75-4baa-b9bb-941d1f0b60cb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/model/CommonItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/model/CommonItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/AuthorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/ToCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/ToCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/format/FormatText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/logic/format/FormatText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/CommonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/CommonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ConferenceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ConferenceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ControllerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ControllerInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DictionaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DictionaryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DissertationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/DissertationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/EditController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/JournalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/JournalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ManualController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ManualController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MonographyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MonographyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/PatentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/PatentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/SynopsisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/SynopsisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/TutorialController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/TutorialController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/WebDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/WebDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yamanov/ui/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,22 +198,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="866" y="260" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580285059404" />
-    <state width="1876" height="269" key="GridCell.Tab.0.bottom" timestamp="1582118298264">
+    <state width="1876" height="269" key="GridCell.Tab.0.bottom" timestamp="1582181285866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582118298264" />
-    <state width="1876" height="269" key="GridCell.Tab.0.center" timestamp="1582118298264">
+    <state width="1876" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582181285866" />
+    <state width="1876" height="269" key="GridCell.Tab.0.center" timestamp="1582181285866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582118298264" />
-    <state width="1876" height="269" key="GridCell.Tab.0.left" timestamp="1582118298264">
+    <state width="1876" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582181285866" />
+    <state width="1876" height="269" key="GridCell.Tab.0.left" timestamp="1582181285866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582118298264" />
-    <state width="1876" height="269" key="GridCell.Tab.0.right" timestamp="1582118298264">
+    <state width="1876" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582181285866" />
+    <state width="1876" height="269" key="GridCell.Tab.0.right" timestamp="1582181285866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582118298264" />
+    <state width="1876" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582181285866" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1581488466913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

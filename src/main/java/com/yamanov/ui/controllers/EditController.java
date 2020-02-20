@@ -203,11 +203,11 @@ public class EditController {
                 item.setNumPatent(controller.getNumPatent());
                 item.setNumJournal(controller.getNumberField());
 
-                item.setYear(Integer.parseInt(controller.getYearField()));
-                item.setPages(Integer.parseInt(controller.getPagesField()));
-                item.setStartPage(Integer.parseInt(controller.getStartPage()));
-                item.setEndPage(Integer.parseInt(controller.getEndPage()));
-                item.setNumBull(Integer.parseInt(controller.getNumBull()));
+                item.setYear(Integer.parseInt(controller.getYearField().equals("") ? "0" : controller.getYearField()));
+                item.setPages(Integer.parseInt(controller.getPagesField().equals("") ? "0" : controller.getPagesField()));
+                item.setStartPage(Integer.parseInt(controller.getStartPage().equals("") ? "0" : controller.getStartPage()));
+                item.setEndPage(Integer.parseInt(controller.getEndPage().equals("") ? "0" : controller.getEndPage()));
+                item.setNumBull(Integer.parseInt(controller.getNumBull().equals("") ? "0" : controller.getNumBull()));
 
                 okClicked = true;
                 dialogStage.close();
@@ -215,6 +215,7 @@ public class EditController {
 
         } catch (Exception e) {
             show.showAlert("Неизвестная ошибка", Alert.AlertType.ERROR);
+            e.printStackTrace();
         }
     }
 

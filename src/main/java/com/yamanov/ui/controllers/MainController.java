@@ -96,9 +96,10 @@ public class MainController {
             if (result) {
                 showAlert.showAlert("отчет создан", Alert.AlertType.CONFIRMATION);
                 clearTable();
-            } else {
-                showAlert.showAlert("произошла ошибка при сохранении отчета", Alert.AlertType.ERROR);
             }
+//            } else {
+//                showAlert.showAlert("произошла ошибка при сохранении отчета", Alert.AlertType.ERROR);
+//            }
         }
     }
 
@@ -117,6 +118,7 @@ public class MainController {
 
     private String getCurrentFolder() {
         final DirectoryChooser directoryChooser = new DirectoryChooser();
+        directoryChooser.setInitialDirectory(new File(System.getProperty("user.dir")));
         File dir = directoryChooser.showDialog(new Stage());
 
         if (dir != null) {

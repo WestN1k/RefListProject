@@ -1,3 +1,5 @@
-/target
-/out
-/.idea
+target
+out
+.idea
+.gradle
+build
